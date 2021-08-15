@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Huong's Contacts</title>
+  </head>
+
+  <body>
+    <h1>Contacts</h1>
+    <p>
+    <strong>Email:</strong>
+    <strong>Phone:</strong>
+    <strong>Address:</strong>
+    </p>
+
+    <!--action = the URL that processes the form submission
+    (what happens when clicked submit)-->
+    <!--mailto allows message to be sent to the email specified-->
+    <!--enctype="text/plain"=data in our form (message box) is encoded in plain text)-->
+    <!--method: specifies how to send form data-->
+    <form action="mailto:nguyenh9414@gmail.com" method="post" enctype="text/plain">
+      <label>Your Name:</label>
+      <!--multiple input types that can use-->
+      <!--name: used to reference the form data-->
+      <input type="text" name="Name" value=""><br>
+      <label>Your Email:</label>
+      <input type="email" name="Email"><br>
+      <label>Message:</label><br>
+      <!--row=how tall text area should be. column=how wide it is-->
+      <!--place for user to input message-->
+      <textarea name="Message" id="" cols="30" rows="10"></textarea><br>
+      <label>Do you want to receive more infomation?</label>
+      <input type="checkbox">
+      <input type="submit">
+
+    </form>
+  </body>
+</html>
